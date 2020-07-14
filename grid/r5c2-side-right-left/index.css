@@ -1,0 +1,45 @@
+
+.basicGrid {
+  display: grid;
+  grid-template-areas: "navigation navigation navigation navigation"
+                       "header header header header"  
+                       "sidebarLeft body body sidebarRight" 
+                       "footer footer footer footer"
+                       "copyright copyright copyright copyright";
+  grid-template-rows: 60px 120px 250px 120px 60px; /* height navigation header body footer copyright */
+  grid-template-columns: 200px 1fr 1fr 200px; /* width sidebar content */
+  max-width: 1024px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+}
+
+.navigation {
+  grid-area: navigation;
+  border: 1px solid grey;
+}
+.header {
+  grid-area: header;
+  border: 1px solid grey;
+}
+.sidebarLeft {
+  grid-area: sidebarLeft;
+  border: 1px solid grey;
+}
+.sidebarRight {
+  grid-area: sidebarRight;
+  border: 1px solid grey;
+}
+.body {
+  grid-area: body;
+  border: 1px solid grey;
+}
+.footer {
+  grid-area: footer;
+  border: 1px solid grey;
+}
+.copyright {
+  grid-area: copyright;
+  border: 1px solid grey;
+}

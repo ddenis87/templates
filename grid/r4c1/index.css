@@ -1,0 +1,32 @@
+
+.basicGrid {
+  display: grid;
+  grid-template-areas: "navigation navigation navigation navigation"
+                       "header header header header"  
+                       "body body body body" 
+                       "footer footer footer footer";
+  grid-template-rows: 80px 160px auto 160px; /* height navigation header body footer */
+  grid-template-columns: 1fr;
+  max-width: 1024px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+}
+
+.navigation {
+  grid-area: navigation;
+  border: 1px solid grey;
+}
+.header {
+  grid-area: header;
+  border: 1px solid grey;
+}
+.body {
+  grid-area: body;
+  border: 1px solid grey;
+}
+.footer {
+  grid-area: footer;
+  border: 1px solid grey;
+}
