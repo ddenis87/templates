@@ -1,0 +1,39 @@
+body, div {
+  margin: 0px;
+  padding: 0px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+.sliderElement {
+  margin: 50px;
+}
+
+.sliderElement {
+  width: 600px;
+  height: auto;
+  border: 0px solid black;
+}
+
+.view {
+  width: 100%;
+  padding: 5px;
+  border: 0px solid black;
+}
+
+.sliderElement:hover .slider {
+  background-color: chartreuse;
+  height: 100px;
+}
+
+.slider {
+  width: 100%;
+  height: 0px;
+  background-color: white;
+  border: 0px solid black;
+  overflow: hidden;
+  transition: 1s height, 1s background-color;
+}

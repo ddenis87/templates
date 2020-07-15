@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.socialItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px; /* расстояние между блоками */
+}
+
+.socialItem:last-child {
+  margin: 0px;
+}
+
+.socialItem__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.socialItem__label {
+  text-transform: uppercase;
+}
