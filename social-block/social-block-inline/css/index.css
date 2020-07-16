@@ -2,15 +2,24 @@ body {
   text-align: center;
   margin-top: 50px;
 }
-
+/* --------------- start css block ---------------- */
 .socialBlockInline {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 190px; /* = количество иконок * (ширина иконки + растояние между иконками) */
+  display: inline-block;
+  justify-content: start;
+  align-items: center;
+  line-height: 0em;
+  border: 1px solid grey; /* убрать в продакшене */
 }
-
-.socialItem__img {
+.socialItem {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px; /* расстояние между изображениями */
+}
+.socialItem:last-child {
+  margin: 0px;
+}
+.socialItem__img { /* размеры изображения */
   width: 30px;
   height: 30px;
 }
+/* --------------- end css block ---------------- */
